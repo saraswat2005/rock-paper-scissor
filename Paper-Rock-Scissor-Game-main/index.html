@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+    
+    <main class="game-mode">
+        <button onclick="startGame('player')" class="mode-btn">2 Player Mode</button>
+    </main>
+
+    <div class="game-container">
+        <div class="player-info">
+            <div class="boxa">
+                <div id="score" class="score">0</div>
+                <div>Player 1</div>
+            </div>
+            <div class="boxa">
+                <div id="score2" class="score">0</div>
+                <div>Player 2</div>
+            </div>
+        </div>
+
+        <main class="game-play">
+            <button id="box1" class="ss"><img src="paper.png" height="150px" width="150px"></button>
+            <button id="box2" class="ss"><img src="scissors.png" height="150px" width="150px"></button>
+            <button id="box3" class="ss"><img src="rock.png" height="150px" width="150px"></button>
+        </main>
+
+        <div class="hexa">
+            <p id="turn-message">Pick your move!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
